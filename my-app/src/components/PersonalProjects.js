@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  @media (min-width: 1448px) {
+  @media (min-width: 992px) {
     flex-direction: row;
     width: 65%;
   }
