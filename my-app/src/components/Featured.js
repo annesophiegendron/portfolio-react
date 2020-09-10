@@ -27,7 +27,7 @@ const ProjectsContainer = styled.div`
     color: black;
   }
   @media (min-width: 992px) {
-    width: 68%;
+    width: 80%;
   }
 `
 
