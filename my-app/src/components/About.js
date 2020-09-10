@@ -31,7 +31,7 @@ const TextIntro = styled.p`
   text-align: left;
   line-height: 29px;
   @media (min-width: 992px) {
-    width: 65%;
+    width: 80%;
   }
 `
 export const About = () => {

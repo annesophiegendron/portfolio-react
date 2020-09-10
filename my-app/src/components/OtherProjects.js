@@ -8,7 +8,7 @@ const ProjectSpacing = styled.div`
   margin-top: 20px;
   margin-bottom: 70px;
     @media (min-width: 992px) {
-      width: 65%;
+      width: 80%;
     }
 `
 

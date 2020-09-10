@@ -20,7 +20,7 @@ const TechList = styled.div`
   justify-content: center;
   justify-content: space-around;
     @media (min-width: 992px) {
-      width: 65%;
+      width: 80%;
   } 
 `
 

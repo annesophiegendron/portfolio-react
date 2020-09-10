@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   @media (min-width: 992px) {
     flex-direction: row;
-    width: 65%;
+    width: 80%;
   }
 `
 const PersonalContainer = styled.div`
