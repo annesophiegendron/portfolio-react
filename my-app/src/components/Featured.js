@@ -27,14 +27,14 @@ const ProjectsContainer = styled.div`
     color: black;
   }
   @media (min-width: 992px) {
-    width: 80%;
+    width: 65%;
   }
 `
 
 const Card = styled.div`
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   perspective: 1000px;
   opacity: 1;
   transition: .5s ease;
@@ -80,8 +80,8 @@ const CardBack = styled.div`
 `
 
 const Image = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
 `
 
 const TagContainer = styled.div`
