@@ -24,6 +24,7 @@ const PersonalContainer = styled.div`
   padding-bottom: 3rem;
   @media (min-width: 992px) {
     padding-bottom: inherit;
+    margin-right: 5vh;
   }
 `
 
@@ -57,7 +58,7 @@ export const PersonalProjects = () => {
             <source src={Cubes} type="video/mp4"></source>
         "Your browser is not supported!"
           </Video>
-          <Text><strong>Cubes animation</strong> using Three.js and the React renderer Three Fiber. See the <a href="https://github.com/annesophiegendron/cubes" target="_blank" rel="noopener noreferrer">source code here</a> or see the project live <strong><a href="https://cubes.annesophiegendron.vercel.app/" target="_blank" rel="noopener noreferrer">here</a></strong>.</Text>
+          <Text><strong>Cubes animation</strong> using Three.js and the React renderer Three Fiber. See the <a href="https://github.com/annesophiegendron/cubes" target="_blank" rel="noopener noreferrer">source code here</a> or see the project live <strong><a href="https://cubes.annesophiegendron.vercel.app/" target="_blank" rel="noopener noreferrer">here</a></strong>.<br></br></Text>
         </PersonalContainer>
       </Wrapper>
 

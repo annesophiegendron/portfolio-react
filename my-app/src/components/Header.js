@@ -84,8 +84,8 @@ const Portrait = styled.img`
   border-radius: 50%;
   border: solid 4px white;
   @media (min-width: 992px) {
-    width: 25vh;
-    height: 25vh;
+    width: 27vh;
+    height: 27vh;
   }
 `
 

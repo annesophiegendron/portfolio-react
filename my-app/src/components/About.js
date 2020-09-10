@@ -25,15 +25,24 @@ const Icon = styled.img`
   padding-bottom: 2px;
 `
 
+const TextIntro = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  line-height: 29px;
+  @media (min-width: 992px) {
+    width: 65%;
+  }
+`
 export const About = () => {
   return (
     <IntroContainer id="about-section">
 
-      <Text>
+      <TextIntro>
         <Icon src={lineIntro} alt="black line"></Icon>
           Hi! I'm a junior front-end developer. With over 10 years of working experience, I have had the chance to work with inspiring people who helped me to get there, first in finance, then in marketing and event management - which makes me used to handling stressful situations and knowing how valuable it is to work well with your team. <br></br><br></br> I’m creative and solution-oriented, always curious to understand how things work and how they can be improved. People describe me as a relaxed and reliable person.
           My preferred technologies right now are React and JavaScript, and I want to dig deeper into that. I also have a goal to get more into Design and UX, where I can use my creative skills to the fullest.
-      </Text>
+      </TextIntro>
   </IntroContainer>
   )
 }

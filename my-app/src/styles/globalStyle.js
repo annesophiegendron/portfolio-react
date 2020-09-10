@@ -45,9 +45,6 @@ export const Text = styled.div`
   font-size: 18px;
   text-align: left;
   line-height: 29px;
-  @media (min-width: 992px) {
-    width: 65%;
-  }
 `
 
 export const Tag = styled.p`
@@ -76,7 +73,7 @@ export const Subtitle = styled.p`
 
 export const ProjectDescription = styled.div`
   color: black;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: lighter;
   text-transform: initial;
   line-height: 28px;
