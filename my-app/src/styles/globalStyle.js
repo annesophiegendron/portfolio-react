@@ -45,6 +45,10 @@ export const Text = styled.div`
   font-size: 18px;
   text-align: left;
   line-height: 29px;
+  
+  a {
+    color: inherit;
+  }
 `
 
 export const Tag = styled.p`

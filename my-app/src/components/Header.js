@@ -28,7 +28,7 @@ const HeaderContainer = styled.section`
 
 const HeaderText = styled.div`
   display: flex;
-  margin-top: 80px;
+  margin-top: 90px;
   -moz-flex-direction: column;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -41,7 +41,7 @@ const HeaderText = styled.div`
 
 const HeaderOne = styled.h1`
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: normal;
   letter-spacing: 2px;
   margin-bottom: 15px;
@@ -56,12 +56,12 @@ const HeaderOne = styled.h1`
 
 const HeaderTwo  = styled.h2`
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 17px;
   letter-spacing: 4px;
   font-weight: bold;
   color: #595959;
   @media (min-width: 992px) {
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 0px;
     display: contents;
   }
