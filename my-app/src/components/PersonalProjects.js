@@ -29,7 +29,7 @@ const PersonalContainer = styled.div`
 `
 
 const Video = styled.video`
-  border: 1px black solid;
+  border: 1px #A6A6A6 solid;
   width: 280px;
   overflow: hidden;
   margin-bottom: 1rem;
