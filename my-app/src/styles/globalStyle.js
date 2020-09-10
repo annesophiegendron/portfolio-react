@@ -42,7 +42,7 @@ export const SectionTitle = styled.h2`
 
 export const Text = styled.div`
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   line-height: 29px;
   
