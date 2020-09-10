@@ -29,7 +29,7 @@ const PersonalContainer = styled.div`
 
 const Video = styled.video`
   border: 1px black solid;
-  width: 300px;
+  width: 280px;
   overflow: hidden;
   margin-bottom: 1rem;
   @media (min-width: 992px) {
