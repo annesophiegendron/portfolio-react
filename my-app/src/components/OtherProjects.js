@@ -248,7 +248,7 @@ export const OtherProjects = () => {
 
             <ButtonContainer>
               <Button onClick={() => setShowMore(false)}>
-                <span>SEE LESS ˯</span>
+                <span>SEE LESS ˰</span>
               </Button>
             </ButtonContainer>
           </>

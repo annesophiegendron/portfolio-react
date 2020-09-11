@@ -77,8 +77,8 @@ const HeaderPortrait = styled.div`
 `
 
 const Portrait = styled.img`
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 50%;
   border: solid 4px white;
