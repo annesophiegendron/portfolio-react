@@ -10,7 +10,6 @@ import portrait from "../assets/images/portrait.png"
 // styled components
 const HeaderContainer = styled.section`
   background-color: white;
-  height: 420px;
   width: 100%;
   opacity: 1;
   position: relative;
@@ -74,6 +73,7 @@ const HeaderPortrait = styled.div`
   flex-wrap: nowrap;
   @media (min-width: 992px) {
     margin-right: 220px;
+    margin-bottom: -8vh;
   }
 `
 
