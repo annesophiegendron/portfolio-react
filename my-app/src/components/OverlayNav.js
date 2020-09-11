@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
 // libraries
 import styled from "styled-components"
@@ -64,13 +64,14 @@ const Hamburger = styled.span`
   font-size: 4vh;
   cursor: pointer;
   position: fixed;
+  color: black;
   &:hover{
     color: grey;
   }
 `
 
 export const OverlayNav = () => {
-  const [showMenu, setMenu] = useState(false)
+  const [showMenu, setMenu] = useState(false, true)
 
   return (
     <>
