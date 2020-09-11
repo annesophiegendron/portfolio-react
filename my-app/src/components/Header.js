@@ -11,7 +11,7 @@ import portrait from "../assets/images/portrait.png"
 const HeaderContainer = styled.section`
   background-color: white;
   width: 100%;
-  opacity: 1;
+  height: 60vh;
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -23,6 +23,10 @@ const HeaderContainer = styled.section`
   padding: 30px;
   justify-content: space-between;
   text-align: left;
+  @media (min-width: 992px) {
+    left: 10%;
+    margin-top: 50px;
+  }
 `
 
 const HeaderText = styled.div`
@@ -31,11 +35,10 @@ const HeaderText = styled.div`
   -moz-flex-direction: column;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
-  margin-bottom: 40px;
-  @media (min-width: 992px) {
-    margin-left: 220px;
-  }
+  justify-content: left;
+  // @media (min-width: 992px) {
+  //   margin-left: 220px;
+  // }
 `
 
 const HeaderOne = styled.h1`
