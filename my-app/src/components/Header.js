@@ -71,14 +71,15 @@ const HeaderPortrait = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-bottom: -8vh;
   @media (min-width: 992px) {
     margin-right: 40vh;
   }
 `
 
 const Portrait = styled.img`
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   border: solid 4px white;
