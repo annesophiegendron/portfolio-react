@@ -31,14 +31,11 @@ const HeaderContainer = styled.section`
 
 const HeaderText = styled.div`
   display: flex;
-  margin-top: 90px;
+  margin-top: 180px;
   -moz-flex-direction: column;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: left;
-  // @media (min-width: 992px) {
-  //   margin-left: 220px;
-  // }
 `
 
 const HeaderOne = styled.h1`
@@ -75,8 +72,7 @@ const HeaderPortrait = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   @media (min-width: 992px) {
-    margin-right: 220px;
-    margin-bottom: -8vh;
+    margin-right: 40vh;
   }
 `
 

@@ -5,7 +5,7 @@ export const SectionWrapperWhite = styled.section`
   font-family: 'Montserrat', sans-serif;
   text-align: -moz-center;
   text-align: center;
-  padding: 60px 40px;
+  padding: 70px 40px;
     @media (min-width: 992px) {
       text-align: -webkit-center;
       text-align: -moz-center;
@@ -17,7 +17,7 @@ export const SectionWrapperGrey = styled.section`
   text-align: -moz-center;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  padding: 60px 40px;
+  padding: 70px 40px;
   width: 100%;
     @media (min-width: 992px) {
       text-align: -webkit-center;

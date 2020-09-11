@@ -29,6 +29,8 @@ const TextIntro = styled.p`
   line-height: 29px;
   @media (min-width: 992px) {
     width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 `
 export const About = () => {
