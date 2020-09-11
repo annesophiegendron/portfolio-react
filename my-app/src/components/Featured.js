@@ -38,6 +38,7 @@ const Card = styled.div`
   height: 280px;
   perspective: 1000px;
   opacity: 1;
+  margin-bottom: 2rem;
   transition: .5s ease;
   backface-visibility: hidden;
 
@@ -45,7 +46,11 @@ const Card = styled.div`
     opacity: 0.7;
   }
   @media (min-width: 992px) {background-color: transparent;
-    margin: 20px;
+    margin-bottom: inherit;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
   }
 `
 
