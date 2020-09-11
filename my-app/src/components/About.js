@@ -4,9 +4,6 @@ import styled from 'styled-components'
 // assets
 import lineIntro from "../assets/images/line_intro.png"
 
-// styles
-import {Text} from "../styles/globalStyle"
-
 const IntroContainer = styled.div`
   background: #F2F2F2 0% 0% no-repeat padding-box;
   border-top: solid #D9D9D9 1px;

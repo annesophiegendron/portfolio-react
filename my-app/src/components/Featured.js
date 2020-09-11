@@ -21,6 +21,7 @@ const ProjectsContainer = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+  max-width: 1100px;
   justify-content: center;
   a {
     text-decoration: none;
