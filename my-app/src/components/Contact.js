@@ -10,9 +10,14 @@ const Footer = styled.div`
   background-color :#0D0D0D;
   color: white;
   text-align: center;
-  padding: 60px 40px;
-  padding-bottom: 130px;
   line-height: 29px;
+  height: 100vh; 
+  padding-top: 30vh;
+
+    @media (min-width: 992px) {
+      height: inherit;
+      padding: 70px 40px;
+    }
 `
 
 const FooterTitle = styled.h6`
