@@ -1,5 +1,9 @@
 import React from 'react'
+
+// libraries
 import styled from 'styled-components'
+import { useAnimation } from "framer-motion"
+import { motion } from "framer-motion"
 
 //components
 import { OverlayNav } from "./OverlayNav"
@@ -11,7 +15,7 @@ import portrait from "../assets/images/portrait.png"
 const HeaderContainer = styled.section`
   background-color: white;
   width: 100%;
-  height: 60vh;
+  height: 55vh;
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -29,7 +33,7 @@ const HeaderContainer = styled.section`
   }
 `
 
-const HeaderText = styled.div`
+const HeaderText = styled(motion.div)`
   display: flex;
   margin-top: 180px;
   -moz-flex-direction: column;
@@ -38,7 +42,7 @@ const HeaderText = styled.div`
   justify-content: left;
 `
 
-const HeaderOne = styled.h1`
+const HeaderOne = styled(motion.h1)`
   text-transform: uppercase;
   font-size: 17px;
   font-weight: normal;
@@ -53,7 +57,7 @@ const HeaderOne = styled.h1`
   }
 `
 
-const HeaderTwo  = styled.h2`
+const HeaderTwo = styled(motion.h1)`
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   letter-spacing: 4px;
@@ -91,18 +95,40 @@ const Portrait = styled.img`
 
 // header component
 export const Header = () => {
+  const parent = {
+    initial: { y: 0 },
+    animate: {
+      y: 0,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  }
+  const child = {
+    initial: { y: -350 },
+    animate: {
+      y: 0,
+      transition: {
+        duration: 2,
+        ease: [0.6, 0.05, -0.01, 0.9],
+      },
+    },
+  }
+
   return (
     <>
       <HeaderContainer role="banner">
         <OverlayNav />
-        <HeaderText>
+        <HeaderText variants={parent} initial="initial" animate="animate">
+          <motion.div variants={child}>
           <HeaderOne>anne-sophie gendron</HeaderOne>
-          <HeaderTwo>front-end developer</HeaderTwo>
+            <HeaderTwo>front-end developer</HeaderTwo>
+          </motion.div>
       </HeaderText>
       <HeaderPortrait>
         <Portrait src={portrait} alt="anne-sophie portrait"></Portrait>
       </HeaderPortrait>
-      </HeaderContainer>
+        </HeaderContainer>
       </>
   )
 }
