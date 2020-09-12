@@ -45,7 +45,6 @@ const Button = styled.div`
   font-weight: bolder;
   color: black;
   transition: all 0.5s ease-in-out;
-  animation-duration: 3s;
   position: relative;
   .span {
     transition: all 0.3s;

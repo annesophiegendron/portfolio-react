@@ -35,7 +35,7 @@ const HeaderContainer = styled.section`
 
 const HeaderText = styled(motion.div)`
   display: flex;
-  margin-top: 180px;
+  margin-top: 160px;
   -moz-flex-direction: column;
   flex-direction: column;
   flex-wrap: nowrap;
