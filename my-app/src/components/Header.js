@@ -35,11 +35,14 @@ const HeaderContainer = styled.section`
 
 const HeaderText = styled(motion.div)`
   display: flex;
-  margin-top: 160px;
+  margin-top: 130px;
   -moz-flex-direction: column;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: left;
+  @media (min-width: 992px) {
+    margin-top: 180px;
+  }
 `
 
 const HeaderOne = styled(motion.h1)`
