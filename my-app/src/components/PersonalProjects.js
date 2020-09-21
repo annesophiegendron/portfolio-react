@@ -41,7 +41,6 @@ box-shadow:  13px -13px 26px #dcdcdc,
   margin-bottom: 1rem;
   @media (min-width: 992px) {
     width: 100%;
-    height: 300px;
   }
 `
 
