@@ -6,7 +6,7 @@ import { SectionWrapperGrey, SectionTitle, Text } from "../styles/globalStyle"
 
 // assets
 import Cubes from "../assets/videos/cubesvideo.mp4"
-import Photography from "../assets/videos/photography_website.mp4"
+import Photography from "../assets/videos/photowebsite.mp4"
 
 const Wrapper = styled.div`
   display: flex;
