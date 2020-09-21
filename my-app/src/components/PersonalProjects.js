@@ -23,6 +23,7 @@ const PersonalContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-bottom: 3rem;
+  
   @media (min-width: 992px) {
     padding-bottom: inherit;
     width: 80%;
