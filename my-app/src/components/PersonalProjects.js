@@ -32,6 +32,7 @@ const PersonalContainer = styled.div`
 `
 
 const Video = styled.video`
+height: -webkit-fill-available;
 border-radius: 0px;
 background: linear-gradient(45deg, #ffffff, #dadada);
 box-shadow:  13px -13px 26px #dcdcdc, 
