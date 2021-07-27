@@ -55,12 +55,12 @@ function App() {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding: 30px;
+  // padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   @media (min-width: 992px) {
-    bottom: -10%;
+    bottom: 5%;
   }
 `
 
