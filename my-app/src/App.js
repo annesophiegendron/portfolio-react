@@ -51,7 +51,7 @@ function App() {
   const SectionContact = styled.div`
   margin: 0;
   position: absolute;
-  bottom: -10%;
+  bottom: 10%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -59,6 +59,9 @@ function App() {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  @media (min-width: 992px) {
+    bottom: -10%;
+  }
 `
 
   const Logo = styled.a`
