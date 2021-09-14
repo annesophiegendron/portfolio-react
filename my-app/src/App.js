@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // import styled from "styled-components";
-import styled from '@emotion/styled'
-
+import styled from "@emotion/styled";
 
 // assets
 import { GithubLogo } from "./assets/svg/github_svg";
@@ -12,71 +11,97 @@ function App() {
   const [background, setBackground] = useState("#F2ECE9");
 
   const SectionWrapper = styled.div`
-  text-align: center;
-  position: relative;
-  height: 100vh;
-  background: ${background};
-`
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    background: ${background};
+    transition-duration: 3s ease-in-out;
+  `;
 
   const TextCard = styled.div`
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  letter-spacing: 1px;
-  font-family: 'Roboto', sans-serif;
-  text-transform: capitalize;
-  color: #010D00;
-`
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    color: #010d00;
+  `;
 
   const TextName = styled.h1`
-  font-weight: 600;
-  font-size: 1.15rem;
-  @media (min-width: 992px) {
-    font-size: 2rem;
-  }
-`
+    font-weight: 600;
+    font-size: 1.15rem;
+    @media (min-width: 992px) {
+      font-size: 2rem;
+    }
+  `;
 
   const TextRole = styled.h2`
-  margin-top: 5%;
-  font-weight: lighter;
-  font-size: 0.85rem;
-  @media (min-width: 992px) {
-    font-size: 1rem;
-  }
-`
+    margin-top: 5%;
+    font-weight: lighter;
+    font-size: 0.85rem;
+    @media (min-width: 992px) {
+      font-size: 1rem;
+    }
+  `;
 
   const SectionContact = styled.div`
-  margin: 0;
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  // padding: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  @media (min-width: 992px) {
-    bottom: 5%;
-  }
-`
+    margin: 0;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media (min-width: 992px) {
+      bottom: 5%;
+    }
+  `;
 
   const Logo = styled.a`
-  text-decoration: none;
-  padding: 30px;
-  color: black;
-  cursor: pointer;
+    text-decoration: none;
+    padding: 30px;
+    color: black;
+    cursor: pointer;
     :hover {
       transform: scale(1.1);
       transition: 0.3s ease-in-out;
     }
-`
+  `;
+
+  const linkText = document.querySelector(".link-text");
+  const linkImage = document.querySelector(".link-image");
+
+  let x;
+  let y;
+
+  function showImgContent(e) {
+    x = e.clientX;
+    y = e.clientY;
+    linkImage.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+    linkText.style.setProperty("--x", x + "px");
+    linkText.style.setProperty("--y", y + "px");
+  }
+  document.addEventListener("mousemove", showImgContent);
 
   return (
     <SectionWrapper>
+      <div class="container">
+  <a class="link" href="https://en.wikipedia.org/wiki/Wednesday" target="_blank">Wednesday</a>
+  <span class="hover-container">
+    <span class="link-text" aria-hidden="true">Wednesday</span>
+    <span class="image-container">
+      <span class="image-inner">
+        <img class="link-image" src="https://images.unsplash.com/photo-1533910534207-90f31029a78e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80" alt="donut" />
+      </span>
+    </span>
+  </span>
+</div>
       <TextCard>
         <TextName>anne-sophie gendron</TextName>
         <TextRole>Front-end developer</TextRole>
@@ -85,27 +110,39 @@ function App() {
         <Logo
           href="https://github.com/annesophiegendron"
           target="_blank"
-          onMouseEnter={() => setBackground("#85FFBD linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%)")}
+          onMouseEnter={() =>
+            setBackground(
+              "#85FFBD linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%)"
+            )
+          }
         >
           <GithubLogo />
         </Logo>
         <Logo
           href="https://codepen.io/annesophiegdn"
           target="_blank"
-          onMouseEnter={() => setBackground("#A9C9FF linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%)")}
+          onMouseEnter={() =>
+            setBackground(
+              "#A9C9FF linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%)"
+            )
+          }
         >
           <CodepenLogo />
         </Logo>
         <Logo
           href="https://www.linkedin.com/in/anne-sophie-gendron/"
           target="_blank"
-          onMouseEnter={() => setBackground("#FBAB7E linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)")}
+          onMouseEnter={() =>
+            setBackground(
+              "#FBAB7E linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)"
+            )
+          }
         >
           <LinkedinLogo />
         </Logo>
       </SectionContact>
     </SectionWrapper>
-  )
+  );
 }
 
-export default App
+export default App;
