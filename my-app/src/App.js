@@ -72,36 +72,10 @@ function App() {
       transform: scale(1.1);
       transition: 0.3s ease-in-out;
     }
-  `;
-
-  const linkText = document.querySelector(".link-text");
-  const linkImage = document.querySelector(".link-image");
-
-  let x;
-  let y;
-
-  function showImgContent(e) {
-    x = e.clientX;
-    y = e.clientY;
-    linkImage.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-    linkText.style.setProperty("--x", x + "px");
-    linkText.style.setProperty("--y", y + "px");
-  }
-  document.addEventListener("mousemove", showImgContent);
+  `
 
   return (
     <SectionWrapper>
-      <div class="container">
-  <a class="link" href="https://en.wikipedia.org/wiki/Wednesday" target="_blank">Wednesday</a>
-  <span class="hover-container">
-    <span class="link-text" aria-hidden="true">Wednesday</span>
-    <span class="image-container">
-      <span class="image-inner">
-        <img class="link-image" src="https://images.unsplash.com/photo-1533910534207-90f31029a78e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80" alt="donut" />
-      </span>
-    </span>
-  </span>
-</div>
       <TextCard>
         <TextName>anne-sophie gendron</TextName>
         <TextRole>Front-end developer</TextRole>
